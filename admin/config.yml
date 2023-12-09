@@ -47,26 +47,22 @@ collections: # A list of collections the CMS should be able to edit
     editor:
       preview: false
     files:
-      - label: "About Page"
-        name: "about"
-        file: "_pages/about.md"
+      - label: "Homepage"
+        name: "Homepage"
+        file: "_data/homepage.yml"
         fields:
           - {
-              label: "Title",
-              name: "title",
+              label: "Hero Title",
+              name: "heroTitle",
               widget: "string",
-              default: "about",
+              default: "Embark on a Journey of Love and Learning at",
             }
           - {
-              label: "Featured image",
-              name: "image",
-              widget: "image",
-              tagname: "image",
+              label: "Hero Copy",
+              name: "heroCopy",
+              widget: "string",
+              default: At Rainbow Colours Family Day Care,
+              we understand the importance of a supportive and nurturing environment for your little ones. Our family daycare is designed to be a haven where children flourish through play,
+              exploration,
+              and genuine care.,
             }
-          - {
-              label: "Layout",
-              name: "layout",
-              widget: "hidden",
-              default: "page",
-            }
-          - { label: "Body", name: "body", widget: "markdown" }

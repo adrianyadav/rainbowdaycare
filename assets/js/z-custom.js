@@ -1,6 +1,6 @@
 // Hero slider init
 $('.js-main-slider').owlCarousel({
-    loop: true,
+    loop: false,
     margin: 0,
     nav: true,
     autoplay: false,
@@ -47,22 +47,20 @@ $('.js-courses-slider').owlCarousel({
 
 // Image Gallery Slider init
 $('.js-gallery-slider').owlCarousel({
-    loop: true,
+    loop: false,
     margin: 15,
     nav: false,
     autoplay: true,
     autoplayTimeout: 10000,
-    dots: true,
-    items: 5,
+    dots: false,
+    items: 1,
+    center: true,
     responsive: {
         0: {
             items: 3,
         },
         576: {
             items: 3,
-        },
-        992: {
-            items: 4,
         },
         1200: {
             items: 5,

@@ -4,9 +4,10 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <title>{{ site.title }}</title>
+  <title>{{site.data.settings.websiteTitle }}</title>
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <meta name="description" content="{{site.data.settings.websiteDescription }}">
 </head>
 
 <body>
@@ -14,9 +15,9 @@
   {% include header.html %}
   {% include hero.html %}
   <div id="content" role="main">
-    {% include about.html %}
+    {% include sections/about.html %}
     {% include gallery.html %}
-    {% include /sections/contact.html %}
+    {% include sections/contact.html %}
   </div>
   {{ content }}
 

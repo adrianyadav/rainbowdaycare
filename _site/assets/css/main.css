@@ -5542,8 +5542,8 @@
  
  .navbar-collapse {
      flex-basis: 100%;
-     flex-grow: 1;
-     align-items: center;
+     flex-grow: 1;     
+     align-items: end;
  }
  
  .navbar-toggler {
@@ -18920,7 +18920,6 @@
  }
  
  .main-navbar {
-     padding-top: calc(15px + 1px);
      padding-bottom: 15px;
      transition: padding .4s ease-in-out;
  }
@@ -18947,6 +18946,7 @@
  
  .main-navbar__nav {
      position: relative;
+     margin-top: 20px;
  }
  
  @media (max-width: 991.98px) {
@@ -18968,7 +18968,7 @@
  .main-navbar__nav-link:before {
      content: '';
      position: absolute;
-     width: 25px;
+     width: 60px;
      height: 25px;
      left: 7px;
      top: 7px;
@@ -18981,7 +18981,7 @@
  
  @media (max-width: 1199.98px) {
      .main-navbar__nav-link:before {
-         width: 22px;
+         width: 60px;
          height: 22px;
          left: 0px;
          top: 6px;
@@ -19021,7 +19021,7 @@
  }
  
  .main-navbar__brand {
-     width: 145px;
+     width: 200px;
      margin: 0;
  }
  
