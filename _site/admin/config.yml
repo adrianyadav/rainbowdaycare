@@ -7,7 +7,7 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 
 collections: # A list of collections the CMS should be able to edit
   - name: "settings"
-    label: "Settings"
+    label: "Website Settings"
     description: "Configure default settings here"
     files:
       - label: "Edit Settings"
@@ -26,8 +26,17 @@ collections: # A list of collections the CMS should be able to edit
               widget: "string",
               default: "Sapna Yadav",
             }
-          - { label: "Author name", name: "authorName", widget: "string" }
-          - { label: "Author image", name: "authorImage", widget: "image" }
+          - label: "Contact details"
+            name: "items"
+            widget: "list"
+            fields:
+              - {
+                  label: "Email Address",
+                  name: "emailAddress",
+                  widget: "string",
+                }
+              - { label: "Phone Number", name: "phoneNumber", widget: "string" }
+              - { label: "Address", name: "Address", widget: "string" }
           - {
               label: "Google analytics id",
               name: "googleAnalyticsId",
