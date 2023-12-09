@@ -1006,12 +1006,42 @@
     </div>
 </div>
   </div>
+  
+
   <footer class="site-footer home-page" id="footer" role="contentinfo">
     <div class="container">
         <p class="site-footer__copyright">© Copyright, 2021. All Rights Reserved.</p>
     </div>
 </footer>
-  
+  <!-- JavaScript Files Starts -->
+
+<!-- Jquery v3.6.0 -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+
+<!-- Bootstrap js v4.6.0 -->
+<script src="assets/plugins/bootstrap-4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- OwlCarousel2 v2.3.4 -->
+<script src="assets/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+
+<!-- Custom Js and Init Codes -->
+<script src="assets/js/z-custom.js"></script>
+
+<!-- Netlify CMS -->
+
+<script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                });
+            }
+        });
+    }
+</script>
+
+<!-- JavaScript Files Ends -->
 </body>
 
 </html>
