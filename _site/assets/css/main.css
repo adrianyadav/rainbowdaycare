@@ -18968,7 +18968,7 @@
  .main-navbar__nav-link:before {
      content: '';
      position: absolute;
-     width: 25px;
+     width: 60px;
      height: 25px;
      left: 7px;
      top: 7px;
