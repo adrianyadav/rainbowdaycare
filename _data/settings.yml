@@ -1,5 +1,9 @@
-title: Rainbow Colours Family Daycare
+title: Rainbow Colours Family Day Care
 description: "Rainbow Colours Family Daycare is "
 authorName: Sapna Yadav
 authorImage: /images/uploads/sapnayadav.jpeg
+items:
+  - emailAddress: rainbowcoloursfamilydaycare@gmail.com
+    phoneNumber: 0437 982 299
+    Address: 26 Parsons Road, Bardia, NSW, 2565
 googleAnalyticsId: "2312"
