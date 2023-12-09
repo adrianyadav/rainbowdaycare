@@ -29,11 +29,6 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Email Address", name: "emailAddress", widget: "string" }
           - { label: "Phone Number", name: "phoneNumber", widget: "string" }
           - { label: "Address", name: "address", widget: "string" }
-          - {
-              label: "Google analytics id",
-              name: "googleAnalyticsId",
-              widget: "string",
-            }
   - name: "pages"
     label: "Pages"
     editor:
