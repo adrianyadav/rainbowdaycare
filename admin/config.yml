@@ -1,0 +1,36 @@
+backend:
+  name: git-gateway
+  branch: master
+  identity_url: "https://rainbowcoloursfamilydaycare.netlify.app/.netlify/identity"
+  gateway_url: "https://rainbowcoloursfamilydaycare.netlify.app/.netlify/git"
+  squash_merges: true
+
+publish_mode: editorial_workflow
+media_folder: "assets/img/uploads"
+
+site_url: https://rainbowcoloursfamilydaycare.netlify.app/
+logo_url: https://rainbowcoloursfamilydaycare.netlify.app/assets/img/logo.svg
+meta: # Meta data fields. Just like fields, but without any preview element
+  - {
+      label: "Publish Date",
+      name: "date",
+      widget: "datetime",
+      format: "YYYY-MM-DD hh:mm:ss",
+    }
+collections: # A list of collections the CMS should be able to edit
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Post" # Used in the UI, ie.: "New Post"
+    folder: "_posts" # The path to the folder where the documents are stored
+    sort: "date:desc" # Default is title:asc
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields: # The fields each document in this collection have
+      - { label: "Layout", name: "layout", widget: "hidden", default: "post" }
+      - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - {
+          label: "Categories",
+          name: "categories",
+          widget: "string",
+          required: false,
+        }
