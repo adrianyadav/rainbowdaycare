@@ -16,27 +16,19 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {
               label: "Website title",
-              name: "title",
+              name: "websiteTitle",
               widget: "string",
               default: "Sapna Yadav",
             }
           - {
               label: "Website description",
-              name: "description",
+              name: "websiteDescription",
               widget: "string",
               default: "Sapna Yadav",
             }
-          - label: "Contact details"
-            name: "items"
-            widget: "list"
-            fields:
-              - {
-                  label: "Email Address",
-                  name: "emailAddress",
-                  widget: "string",
-                }
-              - { label: "Phone Number", name: "phoneNumber", widget: "string" }
-              - { label: "Address", name: "Address", widget: "string" }
+          - { label: "Email Address", name: "emailAddress", widget: "string" }
+          - { label: "Phone Number", name: "phoneNumber", widget: "string" }
+          - { label: "Address", name: "Address", widget: "string" }
           - {
               label: "Google analytics id",
               name: "googleAnalyticsId",
@@ -51,12 +43,6 @@ collections: # A list of collections the CMS should be able to edit
         name: "Homepage"
         file: "_data/homepage.yml"
         fields:
-          - {
-              label: "Hero Title",
-              name: "heroTitle",
-              widget: "string",
-              default: "Embark on a Journey of Love and Learning at",
-            }
           - {
               label: "Hero Copy",
               name: "heroCopy",
