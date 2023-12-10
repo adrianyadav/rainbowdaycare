@@ -14,6 +14,7 @@ Panel:
     image: /images/uploads/sapnayadav.jpeg
     altText: photo of sapna yadav
     panelContentHeading: "Meet: Sapna Yadav"
+    panelColor: bg-pallet-color-1
   - PanelColor:
       - bg-pallet-color-2
     panelHeading: Activities
@@ -37,6 +38,7 @@ Panel:
     panelContentHeading: About our activities
     image: /images/uploads/markus-spiske-pijwpmtzbi0-unsplash.jpg
     altText: lots of pencils
+    panelColor: bg-pallet-color-2
   - PanelColor:
       - bg-pallet-color-3
     panelHeading: Food & Beverages
@@ -51,3 +53,4 @@ Panel:
       For snacks, we offer fresh fruit."
     image: /images/uploads/angela-mulligan-pjjcl8uj7dg-unsplash.jpg
     altText: two kids eating
+    panelColor: bg-pallet-color-3
