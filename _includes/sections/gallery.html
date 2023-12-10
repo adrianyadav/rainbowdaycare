@@ -25,13 +25,11 @@
         </div>
         <div class="container-fluid">
             <div class="owl-carousel owl-theme js-gallery-slider home-gallery__slider">
-
                 {% for photo in site.data.gallery.galleryImages %}
                 <div class="home-gallery__slider-item img-wrapper rounded hover-zoom hover-shine">
                     <img src={{photo.image}} class="img-fluid" alt={{photo.imageAltText}}>
                 </div>
                 {% endfor %}
-                <!-- Gallery Item 1 Ends -->
             </div>
         </div>
 
