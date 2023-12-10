@@ -39,7 +39,7 @@ collections: # A list of collections the CMS should be able to edit
         file: "_data/hero.yml"
         fields:
           - {
-              label: "Hero Copy",
+              label: "Hero Panel",
               name: "heroCopy",
               widget: "markdown",
               default: At Rainbow Colours Family Day Care,
