@@ -70,8 +70,8 @@ collections: # A list of collections the CMS should be able to edit
               - { label: Panel Heading, name: panelHeading, widget: string }
               - {
                   label: Panel Colour,
-                  name: PanelColor,
-                  widget: list,
+                  name: panelColor,
+                  widget: text,
                   default: "bg-pallet-color-1",
                 }
               - { label: Panel Icon, name: panelIcon, widget: string }
