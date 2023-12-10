@@ -148,4 +148,64 @@ panels:
       I also spot their strengths and encourage them in that direction.
       Children feel supported, and then they get ready for school life"
     image: /images/uploads/sapnayadav.jpeg
-    altText: picture of Sapna yADAV
+    altText: picture of Sapna Yadav
+  - panelColour:
+      - bg-pallet-color-2
+    panelHeading: Activities
+    panelIcon: flaticon-creativity
+    panelContentHeading: About our activities
+    panelContent: "At our family daycare, our kids engage in a various range of
+      activities:
+
+
+      \r
+
+      \r
+
+      \r- Painting\r
+
+      \r
+
+      - Yoga \r
+
+      \r
+
+      - Dancing \r
+
+      \r
+
+      - Weekly excursions (to a nearby park) \r
+
+      \r
+
+      - Games  \r
+
+      \r
+
+      \r
+
+
+      Art and games encourage youngsters to examine creativity more
+      deeply, think about it, and discuss it. They provide a framework for
+      faculties to build on children's observations, understandings, and
+      discussions about creativity."
+    image: /images/uploads/markus-spiske-pijwpmtzbi0-unsplash.jpg
+    altText: pencils
+  - panelColour:
+      - bg-pallet-color-3
+    panelContentHeading: About our daily meals
+    panelIcon: flaticon-cooking
+    panelHeading: Food & Beverages
+    panelContent: "Kids will need to bring their own breakfast, lunch and
+      afternoon\r
+
+      \r
+
+      \r
+
+      \r
+
+
+      For snacks, we offer fresh fruit."
+    image: /images/uploads/angela-mulligan-pjjcl8uj7dg-unsplash.jpg
+    altText: kids eating
