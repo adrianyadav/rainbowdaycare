@@ -15,33 +15,19 @@
         </div>
         <!-- Section Heading Ends -->
 
+
+
         <!-- Tabs Starts -->
         <!-- Tab Controls / Navigation Starts -->
         <div class="nav nav-justified modern-tabs js-home-tabs home-about__tabs" role="tablist">
 
-            <!-- Tab 2 Control Starts -->
+            {% for panel in site.data.about %}
             <a class="nav-link modern-tabs__link bg-pallet-color-2" data-toggle="tab" href="#AcademicFacilities"
                 role="tab" aria-selected="true">
                 <span class="flaticon-abc-block modern-tabs__icon"></span>
-                Our Educators
+                {{ panel.panelHeading }}
             </a>
-            <!-- Tab 2 Control Ends -->
-
-            <!-- Tab 3 Control Starts -->
-            <a class="nav-link modern-tabs__link bg-pallet-color-3" data-toggle="tab" href="#MusicArts" role="tab"
-                aria-selected="false">
-                <span class="flaticon-creativity modern-tabs__icon"></span>
-                Activities
-            </a>
-            <!-- Tab 3 Control Ends -->
-
-            <!-- Tab 4 Control Starts -->
-            <a class="nav-link modern-tabs__link bg-pallet-color-6" data-toggle="tab" href="#DailyMeals" role="tab"
-                aria-selected="false">
-                <span class="flaticon-cooking modern-tabs__icon"></span>
-                Food &amp; Beverage
-            </a>
-            <!-- Tab 4 Control Ends -->
+            {% endfor %}
 
         </div>
         <!-- Tab Controls / Navigation Ends -->
