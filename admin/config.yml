@@ -29,13 +29,13 @@ collections: # A list of collections the CMS should be able to edit
           - { label: "Email Address", name: "emailAddress", widget: "string" }
           - { label: "Phone Number", name: "phoneNumber", widget: "string" }
           - { label: "Address", name: "address", widget: "string" }
-  - name: "pages"
-    label: "Pages"
+  - name: "section"
+    label: "Sections"
     editor:
       preview: false
     files:
-      - label: "hero"
-        name: "Hero Panel"
+      - label: "Hero Panel"
+        name: "Hero"
         file: "_data/hero.yml"
         fields:
           - {
@@ -47,3 +47,14 @@ collections: # A list of collections the CMS should be able to edit
               exploration,
               and genuine care.,
             }
+      - label: "Gallery"
+        name: "items"
+        file: "_data/gallery.yml"
+        widget: "list"
+        fields:
+          - label: Gallery Images
+            name: galleryImages
+            widget: list
+            fields:
+              - { label: Image, name: image, widget: image }
+              - { label: Image Alt Text, name: altText, widget: string }
