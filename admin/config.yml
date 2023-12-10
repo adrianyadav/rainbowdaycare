@@ -48,7 +48,7 @@ collections: # A list of collections the CMS should be able to edit
               and genuine care.,
             }
       - label: "Gallery"
-        name: "items"
+        name: "gallery"
         file: "_data/gallery.yml"
         widget: "list"
         fields:
@@ -56,5 +56,30 @@ collections: # A list of collections the CMS should be able to edit
             name: galleryImages
             widget: list
             fields:
+              - { label: Image, name: image, widget: image }
+              - { label: Image Alt Text, name: altText, widget: string }
+      - label: "About"
+        name: "items"
+        file: "_data/about.yml"
+        widget: "list"
+        fields:
+          - label: panel
+            name: Panel
+            widget: list
+            fields:
+              - { label: Panel Heading, name: panelHeading, widget: string }
+              - {
+                  label: Panel Colour,
+                  name: PanelColor,
+                  widget: list,
+                  default: "bg-pallet-color-1",
+                }
+              - { label: Panel Icon, name: panelIcon, widget: string }
+              - {
+                  label: Panel Content Heading,
+                  name: panelContentHeading,
+                  widget: text,
+                }
+              - { label: Panel Content, name: panelContent, widget: markdown }
               - { label: Image, name: image, widget: image }
               - { label: Image Alt Text, name: altText, widget: string }
