@@ -28,12 +28,13 @@
      --danger: #dc3545;
      --light: #f8f9fa;
      --dark: #343a40;
-     --pallet-color-1: #ffb164;
-     --pallet-color-2: #00c193;
-     --pallet-color-3: #229a00;
-     --pallet-color-4: #f31f00;
-     --pallet-color-5: #f9c000;
-     --pallet-color-6: #fa6e4f;
+     --pallet-color-1: #98479c;
+     --pallet-color-2: rgb(35, 186, 236);
+     --pallet-color-3: rgb(0, 108, 180);
+     --pallet-color-4: rgb(34, 154, 0);
+     --pallet-color-5: rgb(193, 73, 12);
+     --pallet-color-6: rgb(249, 192, 0);
+     --pallet-color-7: rgb(243, 31, 0);
      --breakpoint-xs: 0;
      --breakpoint-sm: 576px;
      --breakpoint-md: 768px;
@@ -5926,7 +5927,7 @@
  
  .navbar-light .navbar-nav .nav-link:hover,
  .navbar-light .navbar-nav .nav-link:focus {
-     color: rgba(0, 0, 0, 0.7);
+     color: white !important;
  }
  
  .navbar-light .navbar-nav .nav-link.disabled {
@@ -15063,64 +15064,37 @@
  }
  
  .text-pallet-color-1 {
-     color: rgb(152, 71, 156) !important;
+     color: var(--pallet-color-1);
  }
  
- a.text-pallet-color-1:hover,
- a.text-pallet-color-1:focus {
-     color: #ff8b18 !important;
- }
  
  .text-pallet-color-2 {
-     color: rgb(35, 186, 236) !important;
+     color: var(--pallet-color-2);
  }
  
- a.text-pallet-color-2:hover,
- a.text-pallet-color-2:focus {
-     color: #007559 !important;
- }
  
  .text-pallet-color-3 {
-     color: rgb(0, 108, 180) !important;
- }
- 
- a.text-pallet-color-3:hover,
- a.text-pallet-color-3:focus {
-     color: #114e00 !important;
+    color: var(--pallet-color-3);
  }
  
  .text-pallet-color-4 {
-     color: rgb(34, 154, 0) !important;
- }
- 
- a.text-pallet-color-4:hover,
- a.text-pallet-color-4:focus {
-     color: #a71500 !important;
+    color: var(--pallet-color-4);
  }
  
 
 .text-pallet-color-5 {
-    color: rgb(193, 73, 12) !important;
-
+    color: var(--pallet-color-5);
 }
 
  .text-pallet-color-6 {
-     color: rgb(249, 192, 0) !important;
+    color: var(--pallet-color-6);
  }
  
- a.text-pallet-color-5:hover,
- a.text-pallet-color-5:focus {
-     color: #ad8500 !important;
- }
  
  .text-pallet-color-7 {
-     color: rgb(243, 31, 0) !important;
+    color: var(--pallet-color-7);
  }
- 
- a.text-pallet-color-6:hover,
- a.text-pallet-color-6:focus {
-     color: #f63207 !important;
- }
+
  
  .text-body {
      color: #666 !important;
@@ -18974,8 +18948,8 @@
  .main-navbar__nav-link:before {
      content: '';
      position: absolute;
-     width: 60px;
-     height: 25px;
+     width: 92%;
+     height: 66%;
      left: 7px;
      top: 7px;
      z-index: -1;
@@ -18987,8 +18961,8 @@
  
  @media (max-width: 1199.98px) {
      .main-navbar__nav-link:before {
-         width: 60px;
-         height: 22px;
+         width: 92%;
+         height: 66%;
          left: 0px;
          top: 6px;
      }
@@ -18997,7 +18971,7 @@
  .main-navbar__nav-link.active:before,
  .main-navbar__nav-link:not(.dropdown-item):hover:before {
      opacity: 1;
-     background: #ffb164 !important;
+     background: #98479c!important;
      transition: all .3s ease-in-out;
  }
  
