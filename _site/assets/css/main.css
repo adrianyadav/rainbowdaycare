@@ -15063,7 +15063,7 @@
  }
  
  .text-pallet-color-1 {
-     color: #ffb164 !important;
+     color: rgb(152, 71, 156) !important;
  }
  
  a.text-pallet-color-1:hover,
@@ -15072,7 +15072,7 @@
  }
  
  .text-pallet-color-2 {
-     color: #00c193 !important;
+     color: rgb(35, 186, 236) !important;
  }
  
  a.text-pallet-color-2:hover,
@@ -15081,7 +15081,7 @@
  }
  
  .text-pallet-color-3 {
-     color: #229a00 !important;
+     color: rgb(0, 108, 180) !important;
  }
  
  a.text-pallet-color-3:hover,
@@ -15090,7 +15090,7 @@
  }
  
  .text-pallet-color-4 {
-     color: #f31f00 !important;
+     color: rgb(34, 154, 0) !important;
  }
  
  a.text-pallet-color-4:hover,
@@ -15098,8 +15098,14 @@
      color: #a71500 !important;
  }
  
- .text-pallet-color-5 {
-     color: #f9c000 !important;
+
+.text-pallet-color-5 {
+    color: rgb(193, 73, 12) !important;
+
+}
+
+ .text-pallet-color-6 {
+     color: rgb(249, 192, 0) !important;
  }
  
  a.text-pallet-color-5:hover,
@@ -15107,8 +15113,8 @@
      color: #ad8500 !important;
  }
  
- .text-pallet-color-6 {
-     color: #fa6e4f !important;
+ .text-pallet-color-7 {
+     color: rgb(243, 31, 0) !important;
  }
  
  a.text-pallet-color-6:hover,
