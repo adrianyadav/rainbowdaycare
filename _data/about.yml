@@ -1,0 +1,15 @@
+Panel:
+  - PanelColor: bg-pallet-color-1
+    panelIcon: flaticon-abc-block
+    panelHeading: Our Educators
+    panelContent: >-
+      I offer a safe environment for children, to be themselves, to explore, to
+      get positive strokes.
+
+
+      0 to 5 yrs is an important foundation age for children. They need to feel good about themselves and the people they are surrounded with. I lead them gently so they pick up a routine and learn to be helpful and kind.
+
+
+      I also spot their strengths and encourage them in that direction. Children feel supported, and then they get ready for school life.
+    image: /images/uploads/sapnayadav.jpeg
+    altText: photo of sapna yadav
