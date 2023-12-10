@@ -21,97 +21,34 @@
         <!-- Tab Controls / Navigation Starts -->
         <div class="nav nav-justified modern-tabs js-home-tabs home-about__tabs" role="tablist">
 
-            {% for panel in site.data.about.panel %}
+            {% for panel in site.data.about.panels %}
             <a class="nav-link modern-tabs__link bg-pallet-color-2" data-toggle="tab" href="#AcademicFacilities"
                 role="tab" aria-selected="true">
-                <span class="flaticon-abc-block modern-tabs__icon"></span>
+                <span class="{{ panel.panelIcon }} modern-tabs__icon" class=" "></span>
                 {{ panel.panelHeading }}
             </a>
             {% endfor %}
 
         </div>
-        {{site.data.about.panels}}
         <!-- Tab Controls / Navigation Ends -->
 
         <!-- Tab Content Starts -->
         <div class="tab-content bg-white modern-tabs__content">
 
-            <!-- Tab content for Tab Control 2 Starts -->
+            {% for panel in site.data.about.panels %}
             <div class="tab-pane p-lg-5 p-4 active" id="AcademicFacilities" role="tabpanel">
                 <div class="row">
                     <div class="col-xl-7 pr-xl-4 col-md-6">
-                        <h3 class="title">Meet: Sapna Yadav</h3>
-                        <p>
-                            I offer a safe environment for children, to be themselves, to explore, to get positive
-                            strokes.
-                        </p>
-                        <p> 0 to 5 yrs is an important foundation age for children. They need to feel good about
-                            themselves and
-                            the people they
-                            are surrounded with. I lead them gently so they pick up a routine and learn to be helpful
-                            and kind.
-                        </p>
-                        <p> I
-                            also spot their strengths and encourage them in that direction. Children feel supported, and
-                            then
-                            they get ready for school life.</p>
-                        </p>
+                        <h3 class="title">{{panel.panelContentHeading}}</h3>
+                        {{ panel.panelContent | markdownify }}
                     </div>
                     <div class="col-xl-5 col-md-6 mt-3 mt-md-0">
-                        <img src="assets/img/data/sapnayadav.jpg"
-                            class="img-fluid d-block m-auto border-radius-effect shadow" alt="About our daily meals">
+                        <img src="{{ panel.image }}" class="img-fluid d-block m-auto border-radius-effect shadow"
+                            alt="{{ panel.imageAltText }}">
                     </div>
                 </div>
             </div>
-            <!-- Tab content for Tab Control 2 Ends -->
-
-            <!-- Tab content for Tab Control 3 Starts -->
-            <div class="tab-pane p-lg-5 p-4" id="MusicArts" role="tabpanel">
-                <div class="row">
-                    <div class="col-xl-7 pr-xl-4 col-md-6">
-                        <h3 class="title">About our activities</h3>
-
-                        <p>
-                            At our family daycare, our kids engage in a various range of activities:
-                        </p>
-
-                        <ul>
-                            <li>Painting</li>
-                            <li>Yoga</li>
-                            <li>Dancing</li>
-                            <li>Weekly excursions (to a nearby park)</li>
-                            <li>Games</li>
-                        </ul>
-                        <p>
-                            Art and games encourage youngsters to examine creativity more deeply, think about it, and
-                            discuss it. They provide a framework for faculties to build on children's observations,
-                            understandings, and discussions about creativity.
-                        </p>
-                    </div>
-                    <div class="col-xl-5 col-md-6 mt-3 mt-md-0">
-                        <img src="assets/img/data/markus-spiske-PIJwPMtzBI0-unsplash.jpg"
-                            class="img-fluid d-block m-auto border-radius-effect shadow"
-                            alt="About our academic facilities">
-                    </div>
-                </div>
-            </div>
-            <!-- Tab content for Tab Control 3 Ends -->
-
-            <!-- Tab content for Tab Control 4 Starts -->
-            <div class="tab-pane p-lg-5 p-4" id="DailyMeals" role="tabpanel">
-                <div class="row">
-                    <div class="col-xl-7 pr-xl-4 col-md-6">
-                        <h3 class="title">About our daily meals</h3>
-                        <p>Kids will need to bring their own breakfast, lunch and afternoon tea.</p>
-                    </div>
-                    <div class="col-xl-5 col-md-6 mt-3 mt-md-0">
-                        <img src="assets/img/data/angela-mulligan-pJJcl8UJ7dg-unsplash.jpg"
-                            class="img-fluid d-block m-auto border-radius-effect shadow" alt="About our daily meals">
-                    </div>
-                </div>
-            </div>
-            <!-- Tab content for Tab Control 4 Ends -->
-
+            {% endfor %}
         </div>
         <!-- Tab Content Ends -->
 
