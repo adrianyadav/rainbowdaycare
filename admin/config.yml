@@ -34,9 +34,9 @@ collections: # A list of collections the CMS should be able to edit
     editor:
       preview: false
     files:
-      - label: "Homepage"
-        name: "Homepage"
-        file: "_data/homepage.yml"
+      - label: "hero"
+        name: "Hero Panel"
+        file: "_data/hero.yml"
         fields:
           - {
               label: "Hero Copy",
