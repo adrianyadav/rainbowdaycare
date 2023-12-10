@@ -26,15 +26,13 @@
         <div class="container-fluid">
             <div class="owl-carousel owl-theme js-gallery-slider home-gallery__slider">
 
-                <!-- Gallery Item 1 Starts -->
+                {% for photo in site.data.gallery.galleryImages %}
                 <div class="home-gallery__slider-item img-wrapper rounded hover-zoom hover-shine">
-                    <img src="assets/img/data/rainbowfamilydaycare.jpg" class="img-fluid" alt="Gallery Image">
+                    <img src={{photo.image}} class="img-fluid" alt={{photo.imageAltText}}>
                 </div>
+                {% endfor %}
                 <!-- Gallery Item 1 Ends -->
-
-
             </div>
-            <!-- Gallery Slider Ends -->
         </div>
 
     </div>

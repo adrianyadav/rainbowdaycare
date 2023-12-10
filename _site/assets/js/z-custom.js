@@ -49,13 +49,12 @@ $('.js-courses-slider').owlCarousel({
 
 // Image Gallery Slider init
 $('.js-gallery-slider').owlCarousel({
-    loop: false,
+    loop: true,
     margin: 15,
     nav: false,
     autoplay: true,
     autoplayTimeout: 10000,
     dots: false,
-    items: 1,
     center: true,
     responsive: {
         0: {
