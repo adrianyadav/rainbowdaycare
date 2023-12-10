@@ -16,14 +16,14 @@
         <!-- Section Heading Ends -->
 
 
-
         <!-- Tabs Starts -->
         <!-- Tab Controls / Navigation Starts -->
         <div class="nav nav-justified modern-tabs js-home-tabs home-about__tabs" role="tablist">
 
             {% for panel in site.data.about.panels %}
-            <a class="nav-link modern-tabs__link bg-pallet-color-2" data-toggle="tab" href="#AcademicFacilities"
-                role="tab" aria-selected="true">
+            {% assign panelAnchorTag = panel.panelHeading | split: ' ' | first %}
+            <a class="nav-link modern-tabs__link {{ panel.panelColour }}" data-toggle="tab" href="#{{ panelAnchorTag }}"
+                role="tab">
                 <span class="{{ panel.panelIcon }} modern-tabs__icon" class=" "></span>
                 {{ panel.panelHeading }}
             </a>
@@ -34,9 +34,11 @@
 
         <!-- Tab Content Starts -->
         <div class="tab-content bg-white modern-tabs__content">
-
             {% for panel in site.data.about.panels %}
-            <div class="tab-pane p-lg-5 p-4 active" id="AcademicFacilities" role="tabpanel">
+
+            {% include liquid/setFirstPanelActive.liquid %}
+
+            <div class="tab-pane p-lg-5 p-4 {{ active }}" id="{{ panelAnchorTag }}" role="tabpanel">
                 <div class="row">
                     <div class="col-xl-7 pr-xl-4 col-md-6">
                         <h3 class="title">{{panel.panelContentHeading}}</h3>

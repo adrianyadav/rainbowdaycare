@@ -1,0 +1,6 @@
+{% assign panelAnchorTag = panel.panelHeading | split: ' ' | first %}
+{% if panel.panelHeading == 'Our Educators' %}
+  {% assign active = 'active' %}
+{% else %}
+  {% assign active = 'false' %}
+{% endif %}
