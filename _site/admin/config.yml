@@ -71,14 +71,14 @@ collections: # A list of collections the CMS should be able to edit
               - {
                   label: Panel Colour,
                   name: panelColor,
-                  widget: text,
+                  widget: string,
                   default: "bg-pallet-color-1",
                 }
               - { label: Panel Icon, name: panelIcon, widget: string }
               - {
                   label: Panel Content Heading,
                   name: panelContentHeading,
-                  widget: text,
+                  widget: string,
                 }
               - { label: Panel Content, name: panelContent, widget: markdown }
               - { label: Image, name: image, widget: image }
