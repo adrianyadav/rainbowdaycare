@@ -63,22 +63,22 @@ collections: # A list of collections the CMS should be able to edit
         file: "_data/about.yml"
         widget: "list"
         fields:
-          - label: panel
-            name: Panel
+          - label: panels
+            name: Panels
             widget: list
             fields:
               - { label: Panel Heading, name: panelHeading, widget: string }
               - {
                   label: Panel Colour,
                   name: panelColor,
-                  widget: string,
+                  widget: list,
                   default: "bg-pallet-color-1",
                 }
               - { label: Panel Icon, name: panelIcon, widget: string }
               - {
                   label: Panel Content Heading,
                   name: panelContentHeading,
-                  widget: string,
+                  widget: text,
                 }
               - { label: Panel Content, name: panelContent, widget: markdown }
               - { label: Image, name: image, widget: image }

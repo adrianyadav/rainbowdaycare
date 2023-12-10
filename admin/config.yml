@@ -63,8 +63,8 @@ collections: # A list of collections the CMS should be able to edit
         file: "_data/about.yml"
         widget: "list"
         fields:
-          - label: panel
-            name: Panel
+          - label: panels
+            name: Panels
             widget: list
             fields:
               - { label: Panel Heading, name: panelHeading, widget: string }
