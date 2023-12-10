@@ -21,7 +21,7 @@
         <!-- Tab Controls / Navigation Starts -->
         <div class="nav nav-justified modern-tabs js-home-tabs home-about__tabs" role="tablist">
 
-            {% for panel in site.data.about.panels %}
+            {% for panel in site.data.about.panel %}
             <a class="nav-link modern-tabs__link bg-pallet-color-2" data-toggle="tab" href="#AcademicFacilities"
                 role="tab" aria-selected="true">
                 <span class="flaticon-abc-block modern-tabs__icon"></span>
@@ -29,8 +29,8 @@
             </a>
             {% endfor %}
 
-
         </div>
+        {{site.data.about.panels}}
         <!-- Tab Controls / Navigation Ends -->
 
         <!-- Tab Content Starts -->

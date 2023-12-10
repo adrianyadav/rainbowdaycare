@@ -64,7 +64,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: "list"
         fields:
           - label: panels
-            name: Panels
+            name: panels
             widget: list
             fields:
               - { label: Panel Heading, name: panelHeading, widget: string }
