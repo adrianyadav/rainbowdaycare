@@ -21,13 +21,14 @@
         <!-- Tab Controls / Navigation Starts -->
         <div class="nav nav-justified modern-tabs js-home-tabs home-about__tabs" role="tablist">
 
-            {% for panel in site.data.panels %}
+            {% for panel in site.data.about.panels %}
             <a class="nav-link modern-tabs__link bg-pallet-color-2" data-toggle="tab" href="#AcademicFacilities"
                 role="tab" aria-selected="true">
                 <span class="flaticon-abc-block modern-tabs__icon"></span>
                 {{ panel.panelHeading }}
             </a>
             {% endfor %}
+
 
         </div>
         <!-- Tab Controls / Navigation Ends -->
