@@ -2,4 +2,10 @@ backgrounds:
   cream: "#875959"
   warm_cream: "#210606"
 navigation:
-  nav_bg: "#0f0f41"
+  nav_bg: "#000"
+body:
+  body_bg: "#f1f1f2"
+home:
+  home_bg: "#f1f1f2"
+heading:
+  heading_color: "#701d1d"
