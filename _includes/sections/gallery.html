@@ -27,7 +27,7 @@
             <div class="owl-carousel owl-theme js-gallery-slider home-gallery__slider">
                 {% for photo in site.data.gallery.galleryImages %}
                 <div class="home-gallery__slider-item img-wrapper rounded hover-zoom hover-shine">
-                    <img src="{{photo.image}}" class="img-fluid" alt="{{photo.altText}}" loading="lazy">
+                    <img src="{{photo.image}}" class="img-fluid" alt="{{photo.altText}}" loading="lazy" width="400" height="400">
                 </div>
                 {% endfor %}
             </div>

@@ -1,4 +1,16 @@
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # the subpath of your site, e.g. /blog
 title: "Rainbow Colours Family Day Care" # the name of your site, e.g. ACME Corp.
-style: compressed
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-minifier
+
+jekyll-minifier:
+  compress_css: true
+  compress_javascript: true
+  remove_comments: true
+  remove_multi_spaces: true
+  remove_spaces_inside_tags: true
