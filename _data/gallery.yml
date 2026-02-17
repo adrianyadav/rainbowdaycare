@@ -1,9 +1,9 @@
 galleryImages:
-  - image: /images/uploads/smallhouse.jpeg
+  - image: /images/uploads/webp/smallhouse.webp
     altText: small kids house and sofa for kids
-  - image: /images/uploads/table.jpg
+  - image: /images/uploads/webp/table.webp
     altText: kids sized table
-  - image: /images/uploads/toys.jpg
+  - image: /images/uploads/webp/toys.webp
     altText: toys and kids mat
-  - image: /images/uploads/area.jpg
+  - image: /images/uploads/webp/area.webp
     altText: daycare

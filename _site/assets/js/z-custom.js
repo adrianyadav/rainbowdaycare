@@ -131,39 +131,13 @@ $('.js-top_btn').on('click', function() {
     }, 500)
 });
 
+// Contact form validation (submission handled natively by Netlify)
 $("#contactForm").on("submit", function(e) {
-
-	var form = $(this)[0];
-	var submitButton = $(this).find('button[type="submit"]');
-	console.log('submitButton', submitButton);
-
-	$(submitButton).text('Loading ...').prop('disabled', true);
-
-	if (form.checkValidity() === false) {
-        event.preventDefault();
-        event.stopPropagation();
-	    form.classList.add('was-validated');
-		submitButton.text('Inquire Us').prop('disabled', false);
-	    return false;
+    var form = $(this)[0];
+    if (form.checkValidity() === false) {
+        e.preventDefault();
+        e.stopPropagation();
+        form.classList.add('was-validated');
+        return false;
     }
-
-    var dataString = $(this).serialize();
-
-    // alert(dataString); return false;
-
-    $.ajax({
-        type: "POST",
-        url: "formmailer/mailer.php",
-        data: dataString,
-        success: function() {
-            $("#contactForm").html("<div id='message' class='text-center'></div>");
-            $("#message")
-                .html("<h2>Thank you for contacting us!</h2>")
-                .append("<p>We will be in touch soon.</p>")
-                .hide()
-                .fadeIn(1500);
-        }
-    });
-
-    e.preventDefault();
 });

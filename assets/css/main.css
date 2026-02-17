@@ -4,7 +4,7 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- @import url("https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Montserrat:wght@300;400;500;600;700&display=swap");
+ /* Google Fonts loaded via <link> in default.html for better performance */
 
  :root {
      --blue: #007bff;
@@ -3476,8 +3476,8 @@
  
  .btn-pallet-color-1 {
      color: #212529;
-     background-color: #ffb164;
-     border-color: #ffb164;
+     background-color: #C96A00;
+     border-color: #C96A00;
  }
  
  .btn-pallet-color-1:hover {
@@ -3497,8 +3497,8 @@
  .btn-pallet-color-1.disabled,
  .btn-pallet-color-1:disabled {
      color: #212529;
-     background-color: #ffb164;
-     border-color: #ffb164;
+     background-color: #C96A00;
+     border-color: #C96A00;
  }
  
  .btn-pallet-color-1:not(:disabled):not(.disabled):active,
@@ -4009,14 +4009,14 @@
  }
  
  .btn-outline-pallet-color-1 {
-     color: #ffb164;
-     border-color: #ffb164;
+     color: #C96A00;
+     border-color: #C96A00;
  }
  
  .btn-outline-pallet-color-1:hover {
      color: #212529;
-     background-color: #ffb164;
-     border-color: #ffb164;
+     background-color: #C96A00;
+     border-color: #C96A00;
  }
  
  .btn-outline-pallet-color-1:focus,
@@ -4026,7 +4026,7 @@
  
  .btn-outline-pallet-color-1.disabled,
  .btn-outline-pallet-color-1:disabled {
-     color: #ffb164;
+     color: #C96A00;
      background-color: transparent;
  }
  
@@ -4034,8 +4034,8 @@
  .btn-outline-pallet-color-1:not(:disabled):not(.disabled).active,
  .show>.btn-outline-pallet-color-1.dropdown-toggle {
      color: #212529;
-     background-color: #ffb164;
-     border-color: #ffb164;
+     background-color: #C96A00;
+     border-color: #C96A00;
  }
  
  .btn-outline-pallet-color-1:not(:disabled):not(.disabled):active:focus,
@@ -6557,7 +6557,7 @@
  
  .badge-pallet-color-1 {
      color: #212529;
-     background-color: #ffb164;
+     background-color: #C96A00;
  }
  
  a.badge-pallet-color-1:hover,
@@ -8457,7 +8457,7 @@
  }
  
  .bg-pallet-color-1 {
-     background-color: #ffb164 !important;
+     background-color: #C96A00 !important;
      margin: -4px 0;
  }
  
@@ -8604,7 +8604,7 @@
  }
  
  .border-pallet-color-1 {
-     border-color: #ffb164 !important;
+     border-color: #C96A00 !important;
  }
  
  .border-pallet-color-2 {
@@ -18873,7 +18873,7 @@
  
  .bg-pallet-color-1 .section-heading__name:after {
      color: #fff !important;
-     background-color: #ffb164;
+     background-color: #C96A00;
  }
  
  .bg-pallet-color-1 .section-heading__text {
@@ -19821,7 +19821,7 @@
      margin-bottom: 0.5rem;
      font-weight: 600;
      font-size: 0.9rem;
-     color: #ffb164;
+     color: #C96A00;
  }
  
  .course-item__name {
@@ -19904,7 +19904,7 @@
  
  .home-services .carousel-control-prev,
  .home-services .carousel-control-next {
-     background: #ffb164;
+     background: #C96A00;
      width: 50px;
      height: 50px;
      top: 50%;

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html lang=" en-US">
+<html lang="en-US">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Rainbow Colours Family Day Care</title>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <link rel="stylesheet" href="/assets/css/main.css">
   <meta name="description" content="At Rainbow Colours Family Day Care, we understand the importance of a supportive and nurturing environment for your little ones. Our family daycare is designed to be a haven where children flourish through play, exploration, and genuine care.">
+  <meta name="theme-color" content="#98479c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PRX7TK96YC"></script>
   <script>
@@ -20,10 +23,11 @@
 </head>
 
 <body>
+  <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
 
   <header class="main-navbar__wrapper">
     <!-- Main Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white main-navbar sticky-top" id="mainNavbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white main-navbar sticky-top" id="mainNavbar" aria-label="Main navigation">
         <div class="container">
             <!-- Brand or Logo Starts -->
             <a class="navbar-brand main-navbar__brand" href="/"><img src="assets/img/logo/logo.svg" width="50"
@@ -31,7 +35,7 @@
             <!-- Brand or Logo Ends -->
 
             <!-- Navigation Toggle Button Starts -->
-            <button class="navbar-toggler border-0" type="button" data-trigger="#main_nav">
+            <button aria-label="Toggle navigation" class="navbar-toggler border-0" type="button" data-trigger="#main_nav">
                 <svg class="svg-icon" width="25" height="20" viewBox="0 0 41 33" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <path class="svg-icon__path"
@@ -103,18 +107,26 @@
 
 <p>We are registered with <a href="https://www.careforkids.com.au/child-care/mr9g2m/rainbow-colours-family-day-care-bardia-2565">My Home Your Home Family Day Care</a>.</p>
 
-<p>Open <strong>7.15am</strong> to <strong>5.15 pm</strong> | Monday - Friday</p>
+<table>
+  <tbody>
+    <tr>
+      <td>Open <strong>7:15 am</strong> to <strong>5:15</strong> <strong>pm</strong> </td>
+      <td>Monday - Friday</td>
+    </tr>
+  </tbody>
+</table>
 
-<p>Currently, we have two spots available for <strong>2024</strong>.</p>
+<p>Currently, we have no spots available.</p>
 
-                            <a class="btn btn-pallet-color-6 hero-slide__action px-xl-5 font-weight-bold js-scroll"
+                            <a class="btn btn-pallet-color-4 slide__action px-4 py-2 shadow-sm font-weight-bold js-scroll"
                                 href="#contact">Contact Us</a>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <img src="assets/img/data/pexels-photo-3662667.jpeg"
+                        <img src="/images/uploads/webp/hero.webp"
                             class="img-fluid rounded hero-slide__media d-md-block d-none"
-                            alt="Two little kids playing with blocks">
+                            alt="Two little kids playing with blocks"
+                            width="540" height="405" fetchpriority="high">
                     </div>
                 </div>
             </div>
@@ -125,7 +137,7 @@
     </div>
 </div>
 <!-- Hero Slider Ends -->
-  <div id="content" role="main">
+  <main id="content">
     <div class="inner-padding home-about bg-light" id="aboutus">
     <div class="container">
         <!-- Section Heading Starts -->
@@ -195,7 +207,7 @@
                     </div>
                     <div class="col-xl-5 col-md-6 mt-3 mt-md-0">
                         <img src="/images/uploads/sapnayadav.jpeg" class="img-fluid d-block m-auto border-radius-effect shadow"
-                            alt="">
+                            alt="picture of Sapna Yadav" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -233,8 +245,8 @@
 
                     </div>
                     <div class="col-xl-5 col-md-6 mt-3 mt-md-0">
-                        <img src="/images/uploads/markus-spiske-pijwpmtzbi0-unsplash.jpg" class="img-fluid d-block m-auto border-radius-effect shadow"
-                            alt="">
+                        <img src="/images/uploads/webp/markus-spiske-pijwpmtzbi0-unsplash.webp" class="img-fluid d-block m-auto border-radius-effect shadow"
+                            alt="pencils" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -254,8 +266,8 @@
 
                     </div>
                     <div class="col-xl-5 col-md-6 mt-3 mt-md-0">
-                        <img src="/images/uploads/angela-mulligan-pjjcl8uj7dg-unsplash.jpg" class="img-fluid d-block m-auto border-radius-effect shadow"
-                            alt="">
+                        <img src="/images/uploads/webp/angela-mulligan-pjjcl8uj7dg-unsplash.webp" class="img-fluid d-block m-auto border-radius-effect shadow"
+                            alt="kids eating" loading="lazy">
                     </div>
                 </div>
             </div>
@@ -276,14 +288,14 @@
     <div class="home-gallery" id="gallery">
     <!-- Top Wave Effect Starts -->
     <svg xmlns:xlink="http://www.w3.org/1999/xlink" id="wave-top" style="transform:rotate(0deg); transition: 0.3s"
-        viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <defs>
             <linearGradient id="sw-gradient-0-1" x1="0" x2="0" y1="1" y2="0">
                 <stop stop-color="rgba(255, 177, 100, 1)" offset="0%"></stop>
                 <stop stop-color="rgba(255, 177, 100, 1)" offset="100%"></stop>
             </linearGradient>
         </defs>
-        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0-1)"
+        <path style="transform:translate(0, 0px); opacity:1" fill="#C96A00"
             d="M0,60L24,53.3C48,47,96,33,144,30C192,27,240,33,288,36.7C336,40,384,40,432,38.3C480,37,528,33,576,38.3C624,43,672,57,720,56.7C768,57,816,43,864,38.3C912,33,960,37,1008,41.7C1056,47,1104,53,1152,55C1200,57,1248,53,1296,46.7C1344,40,1392,30,1440,25C1488,20,1536,20,1584,25C1632,30,1680,40,1728,41.7C1776,43,1824,37,1872,31.7C1920,27,1968,23,2016,20C2064,17,2112,13,2160,25C2208,37,2256,63,2304,61.7C2352,60,2400,30,2448,26.7C2496,23,2544,47,2592,53.3C2640,60,2688,50,2736,43.3C2784,37,2832,33,2880,30C2928,27,2976,23,3024,20C3072,17,3120,13,3168,11.7C3216,10,3264,10,3312,13.3C3360,17,3408,23,3432,26.7L3456,30L3456,100L3432,100C3408,100,3360,100,3312,100C3264,100,3216,100,3168,100C3120,100,3072,100,3024,100C2976,100,2928,100,2880,100C2832,100,2784,100,2736,100C2688,100,2640,100,2592,100C2544,100,2496,100,2448,100C2400,100,2352,100,2304,100C2256,100,2208,100,2160,100C2112,100,2064,100,2016,100C1968,100,1920,100,1872,100C1824,100,1776,100,1728,100C1680,100,1632,100,1584,100C1536,100,1488,100,1440,100C1392,100,1344,100,1296,100C1248,100,1200,100,1152,100C1104,100,1056,100,1008,100C960,100,912,100,864,100C816,100,768,100,720,100C672,100,624,100,576,100C528,100,480,100,432,100C384,100,336,100,288,100C240,100,192,100,144,100C96,100,48,100,24,100L0,100Z">
         </path>
     </svg>
@@ -302,19 +314,19 @@
             <div class="owl-carousel owl-theme js-gallery-slider home-gallery__slider">
                 
                 <div class="home-gallery__slider-item img-wrapper rounded hover-zoom hover-shine">
-                    <img src=/images/uploads/smallhouse.jpeg class="img-fluid" alt=>
+                    <img src="/images/uploads/webp/smallhouse.webp" class="img-fluid" alt="small kids house and sofa for kids" loading="lazy">
                 </div>
                 
                 <div class="home-gallery__slider-item img-wrapper rounded hover-zoom hover-shine">
-                    <img src=/images/uploads/table.jpg class="img-fluid" alt=>
+                    <img src="/images/uploads/webp/table.webp" class="img-fluid" alt="kids sized table" loading="lazy">
                 </div>
                 
                 <div class="home-gallery__slider-item img-wrapper rounded hover-zoom hover-shine">
-                    <img src=/images/uploads/toys.jpg class="img-fluid" alt=>
+                    <img src="/images/uploads/webp/toys.webp" class="img-fluid" alt="toys and kids mat" loading="lazy">
                 </div>
                 
                 <div class="home-gallery__slider-item img-wrapper rounded hover-zoom hover-shine">
-                    <img src=/images/uploads/area.jpg class="img-fluid" alt=>
+                    <img src="/images/uploads/webp/area.webp" class="img-fluid" alt="daycare" loading="lazy">
                 </div>
                 
             </div>
@@ -324,14 +336,14 @@
 
     <!-- Bottom Wave Effect Starts -->
     <svg xmlns:xlink="http://www.w3.org/1999/xlink" id="wave-bottom" style="transform:rotate(180deg); transition: 0.3s"
-        viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <defs>
             <linearGradient id="sw-gradient-0-2" x1="0" x2="0" y1="1" y2="0">
                 <stop stop-color="rgba(255, 177, 100, 1)" offset="0%"></stop>
                 <stop stop-color="rgba(255, 177, 100, 1)" offset="100%"></stop>
             </linearGradient>
         </defs>
-        <path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0-2)"
+        <path style="transform:translate(0, 0px); opacity:1" fill="#C96A00"
             d="M0,70L24,60C48,50,96,30,144,21.7C192,13,240,17,288,26.7C336,37,384,53,432,53.3C480,53,528,37,576,33.3C624,30,672,40,720,41.7C768,43,816,37,864,40C912,43,960,57,1008,51.7C1056,47,1104,23,1152,25C1200,27,1248,53,1296,58.3C1344,63,1392,47,1440,43.3C1488,40,1536,50,1584,50C1632,50,1680,40,1728,40C1776,40,1824,50,1872,46.7C1920,43,1968,27,2016,28.3C2064,30,2112,50,2160,48.3C2208,47,2256,23,2304,13.3C2352,3,2400,7,2448,13.3C2496,20,2544,30,2592,36.7C2640,43,2688,47,2736,41.7C2784,37,2832,23,2880,30C2928,37,2976,63,3024,65C3072,67,3120,43,3168,41.7C3216,40,3264,60,3312,63.3C3360,67,3408,53,3432,46.7L3456,40L3456,100L3432,100C3408,100,3360,100,3312,100C3264,100,3216,100,3168,100C3120,100,3072,100,3024,100C2976,100,2928,100,2880,100C2832,100,2784,100,2736,100C2688,100,2640,100,2592,100C2544,100,2496,100,2448,100C2400,100,2352,100,2304,100C2256,100,2208,100,2160,100C2112,100,2064,100,2016,100C1968,100,1920,100,1872,100C1824,100,1776,100,1728,100C1680,100,1632,100,1584,100C1536,100,1488,100,1440,100C1392,100,1344,100,1296,100C1248,100,1200,100,1152,100C1104,100,1056,100,1008,100C960,100,912,100,864,100C816,100,768,100,720,100C672,100,624,100,576,100C528,100,480,100,432,100C384,100,336,100,288,100C240,100,192,100,144,100C96,100,48,100,24,100L0,100Z">
         </path>
     </svg>
@@ -385,7 +397,7 @@
                                 <p>
                                     Bardia, NSW, 2565
                                 </p>
-                                <a target="_blank"
+                                <a target="_blank" rel="noopener noreferrer"
                                     href="https://www.google.com/maps/place/26+Parsons+Rd,+Bardia+NSW+2565/@-33.9763713,150.8629268,17z/data=!3m1!4b1!4m6!3m5!1s0x6b12eb59967e1f81:0x3d23bb0d0898e4!8m2!3d-33.9763758!4d150.8655017!16s%2Fg%2F11v6wp7d29?entry=ttu"
                                     class="text-pallet-color-6">View Map</a>
                             </div>
@@ -437,7 +449,7 @@
                         <!-- Form Group Starts -->
                         <div class="form-group home-contact__form-group">
                             <label class="home-contact__form-label" for="phone">Phone*</label>
-                            <input type="text" class="form-control home-contact__form-control" name="phone" id="phone"
+                            <input type="tel" class="form-control home-contact__form-control" name="phone" id="phone"
                                 placeholder="Enter your text here..." required="">
                             <div class="invalid-tooltip">
                                 Please provide a valid Phone.
@@ -448,7 +460,7 @@
                         <!-- Form Group Starts -->
                         <div class="form-group home-contact__form-group">
                             <label class="home-contact__form-label" for="email">Email*</label>
-                            <input type="text" class="form-control home-contact__form-control" name="email" id="email"
+                            <input type="email" class="form-control home-contact__form-control" name="email" id="email"
                                 placeholder="Enter your text here..." required="">
                             <div class="invalid-tooltip">
                                 Please provide a valid Email.
@@ -481,7 +493,7 @@
 
     </div>
 </div>
-  </div>
+  </main>
   <footer class="site-footer home-page" id="footer" role="contentinfo">
     <div class="container">
         <p class="site-footer__copyright">© Copyright Rainbow Colours Family Day Care , 2023. All Rights Reserved.</p>
@@ -490,32 +502,17 @@
   <!-- JavaScript Files Starts -->
 
 <!-- Jquery v3.6.0 -->
-<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/jquery-3.6.0.min.js" defer></script>
 
 <!-- Bootstrap js v4.6.0 -->
-<script src="assets/plugins/bootstrap-4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/plugins/bootstrap-4.6.0/dist/js/bootstrap.bundle.min.js" defer></script>
 
 <!-- OwlCarousel2 v2.3.4 -->
-<script src="assets/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+<script src="assets/plugins/OwlCarousel2-2.3.4/dist/owl.carousel.min.js" defer></script>
 
 <!-- Custom Js and Init Codes -->
-<script src="assets/js/z-custom.js"></script>
+<script src="assets/js/z-custom.js" defer></script>
 
-<!-- Netlify CMS -->
-
-<script>
-    if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-            if (!user) {
-                window.netlifyIdentity.on("login", () => {
-                    document.location.href = "/admin/";
-                });
-            }
-        });
-    }
-</script>
-
-<!-- JavaScript Files Ends -->
 </body>
 
 </html>
